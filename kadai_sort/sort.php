@@ -10,25 +10,21 @@
             $nums = [15, 4, 18, 23, 10 ];
 
             function sort_2way($array,$order){
-                $nums = [15, 4, 18, 23, 10 ];
                 if($order===TRUE){
-                    
-                    echo "昇順にソートします。<br>";
-                    $nums_up=sort($nums);
-                    foreach($nums_up as $array){
-                        echo $array. '<br>';
+                    echo '昇順にソートします。'. '<br>';
+                    $nums=sort($nums);
+                    foreach($nums as $num){
+                        echo $num. '<br>';
                     }
                 }else{
-                    echo "降順にソートします。<br>";
-                    $nums_down=rsort($nums);
-                    foreach($nums_down as $array){
-                        echo $array. '<br>';
+                    echo '降順にソートします。'. '<br>';
+                    $nums=rsort($nums);
+                    foreach($nums as $num){
+                        echo $num. '<br>';
                     }
                 }
             }
-
             sort_2way($nums,TRUE);
-
             sort_2way($nums,FALSE);
             ?>
         </p>
