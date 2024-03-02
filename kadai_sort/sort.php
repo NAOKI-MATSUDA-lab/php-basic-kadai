@@ -12,14 +12,14 @@
             function sort_2way($array,$order){
                 if($order===TRUE){
                     echo '昇順にソートします。'. '<br>';
-                    $nums=sort($nums);
-                    foreach($nums as $num){
+                    sort($array);
+                    foreach($array as $num){
                         echo $num. '<br>';
                     }
                 }else{
                     echo '降順にソートします。'. '<br>';
-                    $nums=rsort($nums);
-                    foreach($nums as $num){
+                    rsort($array);
+                    foreach($array as $num){
                         echo $num. '<br>';
                     }
                 }
